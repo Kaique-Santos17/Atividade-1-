@@ -1,0 +1,32 @@
+algoritmo Mediaponderada;
+// Síntese
+//  Objetivo: Encontrar a média de duas variáveis com peso de 3,5 e 7,5, respectivamente  
+//  Entrada : Duas variáveis reais entre 0 e 10
+//  Saída   : A média ponderada das variáveis com peso aplicado 
+
+
+principal
+	// Declarações
+	notas reais [2];
+	inteiro i;
+	média real;
+
+	// Instruções
+	faca para (i de 0 ate 1 passo 1)
+	    se (i == 0) entao
+	          escreva("Insira a nota A de 0 á 10 (peso 3,5):");
+        senao
+              esceva("Insira a nota B de 0 á 10 (peso 7,5):");
+        fimSe
+        leia(notas [i]);
+        //Ajustar para que as notas sempre desligadas entre 0 e 10
+        se(notas [i] <0) entao notas [i] = 0; fimSe
+        se(notas [i] >10) entao notas [i] = 10; fimSe
+    fimPara
+    média = (3,5 * notas [0] + 7,5 * notas [1]) / 11;
+    escrever("A média das notas com os pesos é de:" + media);
+        
+              
+	          
+
+fimPrincipal

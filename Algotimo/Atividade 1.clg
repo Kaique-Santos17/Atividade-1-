@@ -1,0 +1,29 @@
+algoritmo HorasminutosSegundos;
+// Síntese
+//  Objetivo:Contruir um algoritmo que leia um número inteiro de horas e mostre ao usuário
+//o correspondente em munutos e segundos     
+//  Entrada :numeros de horas
+//  Saída   :números de horas em minutos e segundos 
+
+
+principal
+	// Declarações
+	inteiro horas,minutos,segundos 
+	
+
+	// Instruções
+	//perguntar para o usuário o valor de horas
+	escreva("Digite um número de horas:");
+	leia(horas); 
+	//calcular a conversão
+	minutos = horas * 60;
+	segundos = horas * 60 * 60 ;
+	//resultado
+	escrevel("");
+	escrever(minutos);
+	escreval("minutos");
+	escrever(segundos);
+	escreval("segundos");
+	 
+
+fimPrincipal

@@ -1,0 +1,29 @@
+algoritmo QuocienteResto;
+// Síntese
+//  Objetivo: Calcular o quociente e o resto de uma dada divisão  
+//  Entrada : Dois números inteiros
+//  Saída   : O quociente e o resto da divisão dos números escolhidos 
+
+
+principal
+	// Declarações
+	inteiro numeros [2];
+	inteiro i;
+	inteiro resto;
+	real quociente;
+	
+
+	// Instruções
+faca para (i de 0 ate 1 passo 1)
+      se (i == 0) entao
+         escreva("Insira o dividendo:");
+    senao
+         escreva("Insira o divisor:");
+    fimse
+    leia (numeros [i]);
+
+   fimpara
+   quocinte = numeros [0] / numeors [1];
+   resto = numeros [0] / numeros [1];
+   escreva("Quociente:" + quociente + "Resto:" + resto); 
+fimPrincipal

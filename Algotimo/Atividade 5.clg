@@ -1,0 +1,30 @@
+algoritmo Rolosdefios;
+// Síntese
+//  Objetivo: Calcular a quantidade de rolos de fio que será feito para preencher um es´paço dado pelo usuário em metros  
+//  Entrada : Um número real que representa o tamonho em metros 
+//  Saída   : UM número inteiro que representa quantos rolos de fios devem ser adquiridos 
+
+
+principal
+	// Declarações
+	tamanho real;
+	inteiro fiosi;
+	fiosr reais;
+	inteiro fiostotais;
+
+	// Instruções
+	escreva("Insira o comprimento total de fios em metros:");
+	leia(tamanho);
+	fiosi = tamanho / 50; // Parte inteira
+	fiosr = tamanho / 50; // Parte decimal
+	se (fiosr - fiosi> 0) entao
+	     fiostotais = fiosi + 1;
+	     
+    senao
+
+        fios totais = fiosi;
+    fimSe
+    escrever("Serão fria" + fiostotais + "rolos de fios de 50m");
+        
+    
+fimPrincipal

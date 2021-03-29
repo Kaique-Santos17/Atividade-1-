@@ -1,0 +1,46 @@
+algoritmo infoFuncionario;
+// Síntese
+//  Objetivo: Diversas informações de um dado do funcionário  
+//  Entrada :Nome, sexo,matrícula,horas de trabalho por dia e ganho por hora em reais
+//  Saída   :Informações de entrada e o salário em reias 
+
+
+principal
+	// Declarações
+	texto nome;
+	texto sexo;
+	matrícula inteira;
+	inteiro horas;
+	ganho real ;
+	salário real;
+
+	// Instruções
+	escreva("Sexo do (a) funcionário (a) (M para homem e F para mulher):");
+	leia(sexo);
+	se (comparaTexto(minusculo (sexo),"m") == 0) entao // Se for homem
+	escreva("Nome do funcionário:");
+	leia(nome);
+	escreva("matrícula do funcionário (em números):");
+	leia(matrícula);
+	senao//Se for mulher
+	escreva("Nome da funcionária:");
+	leia(nome);
+	escreva("matrícula da funcionária (em números):");
+	leia(matrícula);
+	fimSe
+
+	Escreva("Insira a quantidade de horas de trabalho por dia:");
+	leia(horas);
+	se(horas> 24) entao horas = 24; fimSe //Limitar horas / dia
+	escreva("Insira o ganho por hora em R $:");
+	leia(ganho);
+
+
+	salario = ganho * horas * 30;
+	escreva("Nome:" + nome);
+	escreva("Sexo:" + maiusculo (sexo));
+	escreva("Matrícula:" + matrícula);
+	escreva("Horas por dia:" + horas + "h");
+	escreva("Ganho por hora:" + ganho + "R $");
+	escreva("Salário:" + salário + "R $");
+fimPrincipal
